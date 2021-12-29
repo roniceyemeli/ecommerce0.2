@@ -1,0 +1,76 @@
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+/* ------ Product Item style ------*/
+@import url('../utils/productsItem/ProductItem.css');
+
+.delete-all{
+    text-align: right;
+    margin: 20px;
+}
+.delete-all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+} 
+.delete-all span{
+    text-transform: uppercase;
+    color: blueviolet;
+    letter-spacing: 1px;
+}
+.delete-all button{
+    border: 1px solid crimson;
+    padding: 4px 10px 10px 12px;
+    color: crimson;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+}
+.delete-all button:hover{
+    background: crimson;
+    color: white;
+}
+
+/*------------ filter menu--------------*/
+.filter_menu{
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 10px;
+}
+.filter_menu select, input{
+    border: 1px solid #ccc;
+    outline: none;
+    height: 40px;
+    padding: 0 5px;
+}
+.filter_menu input{
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* -------- view more ---------*/
+.load_more{
+    text-align: center;
+}
+.load_more button{
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(94, 78, 201);
+    text-transform: capitalize;
+}
+.load_more button:hover{
+    background: rgb(94, 78, 201);
+    color: white;
+}
